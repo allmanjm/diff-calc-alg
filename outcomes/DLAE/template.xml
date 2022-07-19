@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Without a calculator, use a <em>linear approximation</em> to estimate 
+the value of <m>{{root_LaTeX_str}} { {{r}} }</m> to three decimal places.
+        </p>
+    </content>
+    <outtro>
+        <p>
+Using the linearization of 
+<m>f(x) = x^{1/ {{n}} }</m> near <m>a={{a}}</m>,
+we obtain an estimate of <m>{{est}}</m>.
+        </p>
+    </outtro>
+</knowl>

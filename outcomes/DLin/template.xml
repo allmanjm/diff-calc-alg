@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Let <m>f(x) = {{f}}</m> and <m>a={{a}}</m>.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Compute the linearization <m>L(x)</m> for <m>f(x)</m> near <m>x=a</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m mode = "display">
+L(x) = {{y0}} {{ssc}} {{slope}} \left( {{deltax0}} \right)
+</m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p>
+On the same set of axes, depict the linearization <m>L(x)</m> 
+as a good approximation for <m>f(x)</m> near <m>x=a</m>.
+            </p>
+        </content>
+        <outtro>
+            <p>
+<image
+    source = "assets/DLin/generated/{{__seed__}}/Show.png"
+    description = "Linearization L(x) in blue, appoximating a function 
+    f(x) in red, near the point (a,f(a)) in purple."
+/>
+            </p>
+        </outtro>
+    </knowl>
+
+</knowl>

@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Let <m>y = \displaystyle {{f}}</m>.
+        </p>
+        <list>
+            <item><p>Identify which differentiation rule you should 
+            apply <em>first</em> to compute <m>y'</m>: 
+            PRODUCT, QUOTIENT, CHAIN, or SUM rule.</p>
+            <p>
+            If PRODUCT rule: determine the FACTORS. If QUOTIENT 
+            rule: determine the NUMERATOR and DENOMINATOR. If CHAIN rule: 
+            determine the INSIDE and OUTSIDE. If SUM rule: determine the 
+            TERMS.</p></item>
+            <item><p>Compute the derivative <m>y'</m>.</p></item>
+        </list>
+    </content>
+    <outtro>
+        <list>
+            <item><p>{{rs}}</p></item>
+            <item><p><m mode = "display"> y' = {{deriv}}. </m></p></item>
+        </list>
+    </outtro>
+</knowl>

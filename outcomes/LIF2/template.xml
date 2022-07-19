@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <knowl>
+        <content>
+            <p>
+Choose real values for the coefficients 
+<m>A,B,\ldots,G</m> such that <m>L = {{L1}}</m>.
+<m mode = "display">
+L = \lim_{ x \to {{a1}} } {{f1}}
+</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+There are many correct answers, 
+but one solution is to set <m>{{answer1}}</m>,
+while the other coefficients can have any value.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+Explain your reasoning when evaluating the following limit.
+<m mode="display">
+\lim_{x\to {{a2}} } {{f2}}
+</m>
+            </p>
+        </content>
+        <outtro>
+<p><m>{{L2}}</m></p>
+        </outtro>
+    </knowl>
+</knowl>

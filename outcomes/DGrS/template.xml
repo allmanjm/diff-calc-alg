@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+<m mode = "display"> f(x) = {{f}}</m>
+
+For the function <m>f(x)</m> above, do the following.
+        </p>
+        <list> 
+            <item><p> Construct a sign chart for 
+            <m>f</m>, <m>f'</m>, and <m>f''</m>.</p></item>
+            <item><p>Further, compute the limits
+            <m> \displaystyle \lim_{x\to\pm\infty} f(x) </m>. </p></item>
+            <item><p> Finally, use all of the data from the first two bullet points 
+            to sketch an accurate graph of <m>y=f(x)</m>.</p></item>
+        </list>
+        <p>
+On your graph, label and identify asymptotes and "special points"; 
+i.e., zeroes, critical points, local maxima/minima, points of inflection, etc.
+        </p>
+    </content>
+    <outtro>
+        <list>
+            <item>
+            <p>
+Sign chart for <m>f</m>:
+            <image
+                source = "assets/DGrS/generated/{{__seed__}}/sc0.png"
+                description = "Sign chart for f(x)"
+            />
+            </p>
+            <p>
+Sign chart for <m>f'</m>:
+            <image
+                source = "assets/DGrS/generated/{{__seed__}}/sc1.png"
+                description = "Sign chart for f'(x)"
+            />
+            </p>
+            <p>
+Sign chart for <m>f''</m>:
+            <image
+                source = "assets/DGrS/generated/{{__seed__}}/sc2.png"
+                description = "Sign chart for f''(x)"
+            />
+            </p>
+            <p>
+Warning: Labels on tick marks on auto-generated sign charts are 
+rounded to three significant digits (or are integers). Furthermore, 
+on all auto-generated sign charts, <m>x=0</m> appears as an 
+unlabeled tickmark. This is an artifact of the automatically 
+generating computer code, and happens whether or not <m>x=0</m> is, 
+in fact, a "special point" for that sign chart.
+            </p>
+            </item>
+            <item>
+            <p>
+<m>\displaystyle \lim_{x\to\pm\infty} f(x) = {{L}}</m>
+            </p>
+            </item>
+            <item>
+            <p>
+Graph of <m>f</m>:
+            </p>
+            <p>
+            <image
+                source = "assets/DGrS/generated/{{__seed__}}/graph.png"
+                description = "The graph of f (in red) with 
+                asymptotes (dotted lines in blue)
+                and special points (in purple)."
+            />
+            </p>
+            </item>
+        </list>
+    </outtro>
+</knowl>

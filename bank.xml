@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bank xmlns="https://checkit.clontz.org" version="0.2">
+    <title>Differential Calculus of Algebraic Functions</title>
+    <slug>DiffCalc_Algebraic</slug>
+    <url>https://checkit.clontz.org</url>
+    <outcomes>
+        <outcome>
+            <title>Limits - Not Indeterminate</title>
+            <slug>LNIF</slug>
+            <path>outcomes/LNIF</path>
+            <description>
+I can evaluate limits for which the initial form is not an *indeterminate form*.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Limits - Indeterminate Forms 1</title>
+            <slug>LIF1</slug>
+            <path>outcomes/LIF1</path>
+            <description>
+I can evaluate limits for which the initial form is an *indeterminate form*.
+I can use factoring and canceling to compute the limit when $x\to a$ for a
+finite number $a$.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Limits - Indeterminate Forms 2</title>
+            <slug>LIF2</slug>
+            <path>outcomes/LIF2</path>
+            <description>
+I can evaluate limits for which the initial form is an *indeterminate form*.
+I can use algebraic methods or comparison of degrees to compute the limit 
+when $x \to \pm\infty$.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Average Rate of Change</title>
+            <slug>DARC</slug>
+            <path>outcomes/DARC</path>
+            <description>
+I can compute the *average rate of change* of a function
+on a given interval. Additionally, I can depict the average
+rate of change as the slope of a secant line.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Definition</title>
+            <slug>DDfn</slug>
+            <path>outcomes/DDfn</path>
+            <description>
+I can use the definition of the derivative
+as a limit to compute derivatives of $x^n$ 
+for $n = 2$, $3$, $4$, or $-1$.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Identify and Apply Rules</title>
+            <slug>DIAR</slug>
+            <path>outcomes/DIAR</path>
+            <description>
+ I can identify which differentiation rule(s) need to be applied (in order); 
+ moreover, I can apply the rules to compute the derivative.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Linearization</title>
+            <slug>DLin</slug>
+            <path>outcomes/DLin</path>
+            <description>
+I can compute the *linearization* of $f(x)$ 
+near $x=a$ and interpret it with a picture.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Linear Approximation and Estimation</title>
+            <slug>DLAE</slug>
+            <path>outcomes/DLAE</path>
+            <description>
+I can use linear approximation to perform estimations without a
+calculator. In particular, I can estimate real $n$-th roots for
+$n = 2$, $3$, $4$, and $5$.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Critical Points</title>
+            <slug>DCrP</slug>
+            <path>outcomes/DCrP</path>
+            <description>
+I can find the critical points of a function.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - First Derivatives and Graphs</title>
+            <slug>DSC1</slug>
+            <path>outcomes/DSC1</path>
+            <description>
+I can make a *sign chart* for the first derivative and use it to
+(1) find where a function is increasing/decreasing, and 
+(2) classify *critical points*.
+In other words, I can perform a **first derivative test**.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Second Derivatives and Graphs</title>
+            <slug>DSC2</slug>
+            <path>outcomes/DSC2</path>
+            <description>
+I can make a *sign chart* for the second derivative and use it to
+(1) find where a function is concave up/down, and 
+(2) locate points of inflection.
+            </description>
+        </outcome>
+        <outcome>
+            <title>Derivatives - Graph Sketching</title>
+            <slug>DGrS</slug>
+            <path>outcomes/DGrS</path>
+            <description>
+I can sketch accurate graphs of functions $y=f(x)$ by using 
+(1) information from the three sign charts 
+for $f$, $f’$, and $f’’$ together with 
+(2) information about the two limits of $f$ as $x\to\pm\infty$.
+            </description>
+        </outcome>
+    </outcomes>
+</bank>

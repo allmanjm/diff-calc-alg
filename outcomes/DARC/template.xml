@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Consider the function
+        <m mode = "display">
+{{name}}(x) = {{function}} .
+        </m>
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+Compute the <em>average rate of change</em> of 
+<m>{{name}}(x)</m> on the interval <m>[{{a}},{{b}}].</m>
+            </p>
+        </content>
+        <outtro>
+            <p><m>{{arc}}</m></p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>On the same set of axes, plot</p>
+            <list>
+                <item><p>the graph <m>y={{name}}(x)</m>, and</p></item>
+                <item><p>the <em>secant line</em> depicting the
+                average rate of change on the interval 
+                <m>[{{a}},{{b}}].</m></p></item>
+            </list>
+        </content>
+        <outtro>
+            <p>
+            <image
+                source = "assets/DARC/generated/{{__seed__}}/Show.png"
+                description = "The graph of the function in red 
+                with a blue secant line."
+            />
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

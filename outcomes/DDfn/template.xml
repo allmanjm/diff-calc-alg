@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <content>
+        <p>
+Let <m>f(x) = \displaystyle {{f}}</m>. Use the definition of the 
+derivative as a limit to prove that 
+<m mode = "display">f'(x) = {{deriv}}.</m>
+        </p>
+    </content>
+    <outtro>
+        <p>
+<m mode = "display">
+f'(x) = \lim_{h \to 0} \frac{ f(x+h) - f(x) }{h} 
+= [\text{ ... insert your proof here ... }] = {{deriv}}
+</m>
+        </p>
+    </outtro>
+</knowl>

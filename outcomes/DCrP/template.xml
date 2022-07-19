@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+Find all critical points of the following functions.
+        </p>
+    </intro>
+    <knowl>
+        <content>
+            <p><m mode="display"> p(x) = {{cub}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The set of critical points for <m>p(x)</m> is
+<m mode = "display"> {{CPcub_str}} . </m>
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p><m mode="display"> f(x) = {{f}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The set of critical points for <m>f(x)</m> is
+<m mode = "display"> {{CPf_str}} . </m>
+            </p>
+        </outtro>
+    </knowl>
+
+    <knowl>
+        <content>
+            <p><m mode="display"> g(x) = \frac{ {{num}} }{ {{denom}} }</m></p>
+        </content>
+        <outtro>
+            <p>
+The set of critical points for <m>g(x)</m> is
+<m mode = "display"> {{CPg_str}} . </m>
+            </p>
+        </outtro>
+    </knowl>
+</knowl>

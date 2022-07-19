@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+For each of the functions below, make a sign chart 
+for its second derivative and use it to
+        </p>
+        <list>
+            <item><p>find the intervals where the function
+            is concave up / down 
+            (give your answer in interval notation);</p></item>
+            <item><p>find all points of inflection for the function.</p></item>
+        </list>
+    </intro>
+    <knowl>
+        <content>
+            <p><m mode="display"> p(x) = {{p}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The second derivative is <m mode = "display">p''(x) = {{p_2prime}} </m> 
+and the corresponding sign chart for the derivative is
+            </p>
+            <p><image
+                source="assets/DSC2/generated/{{__seed__}}/Show1.png"
+                description="the sign chart for p''(x)"
+            /></p>
+            <p>
+Warning: you may ignore the unlabeled tickmark at <m>x=0</m> 
+in the automatically generated sign chart.
+            </p>
+            <p>
+Recall that an inflection point occurs at <m>x=a</m> only when the 
+second derivative changes sign at <m>x=a</m> and <m>x=a</m> is in 
+the domain of the original function <m>p(x)</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p><m mode="display"> f(x) = {{f}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The second derivative is <m mode = "display">f''(x) = {{f_2prime}} </m> 
+and the corresponding sign chart for the derivative is
+            </p>
+            <p><image
+                source="assets/DSC2/generated/{{__seed__}}/Show2.png"
+                description="the sign chart for f''(x)"
+            /></p>
+            <p>
+Warning: There is an unlabeled tickmark at <m>x=0</m> 
+in the automatically generated sign chart.
+            </p>
+            <p>
+Recall that an inflection point occurs at <m>x=a</m> only when the 
+second derivative changes sign at <m>x=a</m> and <m>x=a</m> is in 
+the domain of the original function <m>f(x)</m>.
+            </p>
+        </outtro>
+    </knowl>
+    
+    
+
+</knowl>

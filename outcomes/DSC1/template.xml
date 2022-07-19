@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+        <p>
+For each of the functions below, make a sign chart 
+for its first derivative and use it to
+        </p>
+        <list>
+            <item><p>find the intervals where the function
+            is increasing / decreasing 
+            (give your answer in interval notation);</p></item>
+            <item><p>classify the critical points as 
+            maxima, minima, or neither</p></item>
+        </list>
+    </intro>
+    <knowl>
+        <content>
+            <p><m mode="display"> p(x) = {{cub}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The derivative is <m mode = "display">p'(x) = {{p_prime}} </m> 
+and the corresponding sign chart for the derivative is
+            </p>
+            <p><image
+                source="assets/DSC1/generated/{{__seed__}}/Show1.png"
+                description="the sign chart for p'(x)"
+            /></p>
+            <p>
+Warning: unless <m>x=0</m> is a critical point, 
+you may ignore the unlabeled tickmark at <m>x=0</m> 
+in the automatically generated sign chart. 
+
+Recall that a critical point is a max/min only 
+if the first derivative changes sign.
+            </p>
+        </outtro>
+    </knowl>
+    
+    <knowl>
+        <content>
+            <p><m mode="display"> f(x) = {{f}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The derivative is <m mode = "display">f'(x) = {{f_prime}} </m> 
+and the corresponding sign chart for the derivative is 
+            </p>
+            <p><image
+                source="assets/DSC1/generated/{{__seed__}}/Show2.png"
+                description="the sign chart for f'(x)"
+            /></p>
+            <p>
+Warning:  <m>x=0</m> <em>is</em> a critical point, 
+and there is an unlabeled tickmark at <m>x=0</m> 
+in the automatically generated sign chart.
+
+Recall that a critical point is a max/min only 
+if the first derivative changes sign.
+            </p>
+        </outtro>
+    </knowl>
+
+</knowl>

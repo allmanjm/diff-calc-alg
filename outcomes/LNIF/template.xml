@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <intro>
+<p>Explain your reasoning when evaluating each of the following limits.</p>
+    </intro>
+    <knowl>
+        <content>
+            <p>
+<m mode = "display">
+\lim_{x \to {{a}} } {{ f1(x) }}
+</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{answer1}}</m>
+            </p>       
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+<m mode = "display">
+\lim_{ x \to {{a}} } {{ f2(x) }}
+</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{answer2}}</m>
+            </p>       
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+<m mode = "display">
+\lim_{ x \to {{a}}^{ {{pm}} } } {{ f3(x) }}
+</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{answer3}}</m>
+            </p>       
+        </outtro>
+    </knowl>
+</knowl>
