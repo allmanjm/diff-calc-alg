@@ -42,11 +42,21 @@ class Generator(BaseGenerator):
         pos_pts1 = [];
         neg_pts1 = [];
 
+        hh = w/20;
+
+        def zero_offset(t,h):
+            if t == 0:
+                out = t+h
+            else:
+                out = t 
+            
+            return out 
+
         for t in test_pts1:
             if p_2prime(t)>0:
-                pos_pts1 += [(t,0.75*peps)]
+                pos_pts1 += [(zero_offset(t,hh),0.75*peps)]
             else:
-                neg_pts1 += [(t,0.75*peps)]
+                neg_pts1 += [(zero_offset(t,hh),0.75*peps)]
 
 
         # for polynomial

@@ -18,8 +18,9 @@ class Generator(BaseGenerator):
         cub = (B/3)*x^3 -(B/2)*(cp0+cp1)*x^2+B*cp0*cp1*x+k
 
         # for a root-y function
-        n = choice([2,3,5,7,11])
-        m = randrange(1,5)
+        top_bottom = sample([3,5,7,11],2)
+        n = top_bottom[0]
+        m = top_bottom[1]
         q = randrange(1,5)*choice([-1,1])
 
         p = q*(n+m)
