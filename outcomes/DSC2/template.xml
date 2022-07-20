@@ -29,7 +29,7 @@ and the corresponding sign chart for the derivative is
 Warning: There is an unlabeled tickmark at <m>x=0</m> 
 in the automatically generated sign chart. This is an 
 artifact of the computer code generating the diagram and 
-occurs whether or not <m>p''(0) = 0 </m>.
+occurs whether or not <m>p''(0) = 0 </m>. 
             </p>
             <p>
 Recall that an inflection point occurs at <m>x=a</m> only when the 

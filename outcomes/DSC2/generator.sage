@@ -46,7 +46,7 @@ class Generator(BaseGenerator):
 
         def zero_offset(t,h):
             if t == 0:
-                out = t+h
+                out = h 
             else:
                 out = t 
             

@@ -24,7 +24,7 @@ The set of critical points for <m>p(x)</m> is
         <outtro>
             <p>
 The set of critical points for <m>f(x)</m> is
-<m mode = "display"> {{CPf_str}} . </m>
+<m mode = "display"> {{CPf_str}}.</m>
             </p>
         </outtro>
     </knowl>

@@ -19,11 +19,11 @@ class Generator(BaseGenerator):
 
         # for a root-y function
         top_bottom = sample([3,5,7,11],2)
-        n = top_bottom[0]
-        m = top_bottom[1]
-        q = randrange(1,5)*choice([-1,1])
+        n = top_bottom[0];
+        m = top_bottom[1];
+        q = randrange(1,5)*choice([-1,1]);
 
-        p = q*(n+m)
+        p = q*(n+m);
 
         f(x) = x^((m+n)/n)-p*x^(m/n)
 
