@@ -49,8 +49,8 @@ class Generator(BaseGenerator):
         pm2 = choice(["+","-"]);
         top_cs = [choice([0,randrange(1,10)*choice([-1,1])]) for i in range(4)];
         tcs = sample(top_cs + [randrange(1,10)],5);
-        bottom_cs = [choice([0,randrange(1,10)*choice([-1,1])]) for i in range(4)];
-        bcs = sample(bottom_cs + [randrange(1,10)],5);
+        bottom_cs = [choice([0,randrange(1,10)*choice([-1,1])]) for i in range(3)];
+        bcs = sample(bottom_cs + [randrange(1,10)*choice([-1,1]) for i in range(2)],5);
         
         top = sum(tcs[i]*x^i for i in range(5));
         bot = sum(bcs[i]*x^i for i in range(5));
