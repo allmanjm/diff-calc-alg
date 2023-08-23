@@ -7,12 +7,16 @@ Let <m>y = \displaystyle {{f}}</m>.
         <list>
             <item><p>Identify which differentiation rule you should 
             apply <em>first</em> to compute <m>y'</m>: 
-            PRODUCT, QUOTIENT, CHAIN, or SUM rule.</p>
-            <p>
-            If PRODUCT rule: determine the FACTORS. If QUOTIENT 
-            rule: determine the NUMERATOR and DENOMINATOR. If CHAIN rule: 
-            determine the INSIDE and OUTSIDE. If SUM rule: determine the 
-            TERMS.</p></item>
+            PRODUCT, QUOTIENT, CHAIN, or SUM rule.</p></item>
+            <item><p>If
+            <list>
+            <item><p>PRODUCT rule: determine the FACTORS</p></item>
+            <item><p>QUOTIENT rule: determine the NUMERATOR and DENOMINATOR (aka "high" and "low")</p></item> 
+            <item><p>CHAIN rule: determine the INSIDE and OUTSIDE</p></item> 
+            <item><p>SUM rule: determine the TERMS</p></item>
+            </list>
+            </p>
+            </item>
             <item><p>Compute the derivative <m>y'</m>.</p></item>
         </list>
     </content>

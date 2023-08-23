@@ -14,12 +14,42 @@ for its second derivative and use it to
     </intro>
     <knowl>
         <content>
+            <p><m mode="display"> f(x) = {{f}} </m></p>
+        </content>
+        <outtro>
+            <p>
+The second derivative is <m mode = "display">f''(x) = {{f_2prime}}. </m> 
+Warning: you probably need to factor the displayed second derivative 
+above before you can properly analyze it.</p>
+
+<p>The corresponding sign chart for the second derivative is
+            </p>
+            <p><image
+                source="assets/DSC2/generated/{{__seed__}}/Show2.png"
+                description="the sign chart for f''(x)"
+            /></p>
+            <p>
+Warning: There is an unlabeled tickmark at <m>x=0</m> 
+in the automatically generated sign chart.
+            </p>
+            <p>
+Recall that an inflection point occurs at <m>x=a</m> only when the 
+second derivative changes sign at <m>x=a</m> and <m>x=a</m> is in 
+the domain of the original function <m>f(x)</m>.
+            </p>
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
             <p><m mode="display"> p(x) = {{p}} </m></p>
         </content>
         <outtro>
             <p>
-The second derivative is <m mode = "display">p''(x) = {{p_2prime}} </m> 
-and the corresponding sign chart for the derivative is
+The second derivative is <m mode = "display">p''(x) = {{p_2prime}}. </m> 
+Warning: you probably need to factor the displayed second derivative 
+above before you can properly analyze it.</p>
+
+<p>The corresponding sign chart for the second derivative is
             </p>
             <p><image
                 source="assets/DSC2/generated/{{__seed__}}/Show1.png"
@@ -38,31 +68,4 @@ the domain of the original function <m>p(x)</m>.
             </p>
         </outtro>
     </knowl>
-    <knowl>
-        <content>
-            <p><m mode="display"> f(x) = {{f}} </m></p>
-        </content>
-        <outtro>
-            <p>
-The second derivative is <m mode = "display">f''(x) = {{f_2prime}} </m> 
-and the corresponding sign chart for the derivative is
-            </p>
-            <p><image
-                source="assets/DSC2/generated/{{__seed__}}/Show2.png"
-                description="the sign chart for f''(x)"
-            /></p>
-            <p>
-Warning: There is an unlabeled tickmark at <m>x=0</m> 
-in the automatically generated sign chart.
-            </p>
-            <p>
-Recall that an inflection point occurs at <m>x=a</m> only when the 
-second derivative changes sign at <m>x=a</m> and <m>x=a</m> is in 
-the domain of the original function <m>f(x)</m>.
-            </p>
-        </outtro>
-    </knowl>
-    
-    
-
 </knowl>

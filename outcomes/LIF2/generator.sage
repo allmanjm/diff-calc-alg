@@ -5,7 +5,7 @@ class Generator(BaseGenerator):
         pm_dict = {"+":1,"-":-1}
         LaTeXsign_dict = {"+":"\\infty", "-":"-\\infty"};
 
-        # stuff for Task1
+        # stuff for "make up the problem with given answer Task"
         A,B,C,D,E,F,G = var('A,B,C,D,E,F,G');
         
         numer = A*x^2 + B*x + C;
@@ -45,7 +45,7 @@ class Generator(BaseGenerator):
 
 
 
-        # stuff for Task2
+        # stuff for "solve the given problem Task"
         pm2 = choice(["+","-"]);
         top_cs = [choice([0,randrange(1,10)*choice([-1,1])]) for i in range(4)];
         tcs = sample(top_cs + [randrange(1,10)],5);

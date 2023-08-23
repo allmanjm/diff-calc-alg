@@ -18,14 +18,21 @@ class Generator(BaseGenerator):
             "c": monomial(poly(x)),
             }
         
+        dd=derivative(rule_f_dict[rule_choice],x)
+        ddnd=dd.numerator_denominator();
+
         if rule_choice == "p":
-            rule_string = "PRODUCT"
+            rule_string = "PRODUCT";
+            d_answer = dd;
         elif rule_choice == "q":
-            rule_string = "QUOTIENT (or PRODUCT)"
+            rule_string = "QUOTIENT (or PRODUCT)";
+            d_answer = ddnd[0]/ddnd[1];
         elif rule_choice == "c":
-            rule_string = "CHAIN"
+            rule_string = "CHAIN";
+            d_answer = dd;
         else:
-            rule_string = "SUM"
+            rule_string = "SUM";
+            d_answer = dd;
         
 
 
@@ -33,5 +40,5 @@ class Generator(BaseGenerator):
         return {
             "f": rule_f_dict[rule_choice],
             "rs": rule_string,
-            "deriv": derivative(rule_f_dict[rule_choice],x),
+            "deriv": d_answer,
         }

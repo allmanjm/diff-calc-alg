@@ -1,6 +1,6 @@
 # Differential Calculus of Algebraic Functions (DiffCalc_Alg)
 
-This is a bank of randomized exercises for the CheckIt platform. The exercises align with 12 learning outcomes for differential calculus involving algebraic functions. 
+This is a bank of randomized exercises for the CheckIt platform. The exercises align with  learning outcomes for differential calculus involving algebraic functions. 
 
 The exercises were developed originally for the first semester of a year-long "Calculus I with Integrated Precalculus" sequence at Wake Forest University in Winston-Salem, NC [<https://math.wfu.edu/>]. In particular, this bank is intended to pair with the precalculus skills bank PreCalcSkills1 which can be found at <https://allmanjm.github.io/pre-calc-1/>. At the end of this document, there is a list of how the PreCalcSkills1 outcomes align with the outcomes in this bank.
 
@@ -21,7 +21,7 @@ The exercises were developed originally for the first semester of a year-long "C
 
 ###### DARC. I can compute the *average rate of change* of a function on a given interval. Additionally, I can depict the average rate of change as the slope of a secant line.
 
-###### DDfn. I can use the definition of the derivative as a limit to compute derivatives of $x^n$ for $n = 2$, $3$, $4$, or $-1$.
+###### DDfn. I can use the definition of the derivative as a limit to compute derivatives of $x^n$ for $n = 2$, $3$, $4$, or $5$.
 
 ###### DIAR. I can identify which differentiation rule(s) need to be applied (in order); moreover, I can apply the rules to compute the derivative.
 
@@ -40,16 +40,13 @@ The exercises were developed originally for the first semester of a year-long "C
 
 ## DiffCalc_Alg/PreCalcSkills1 outcome dependencies:
 
-To be fully successful on the calculus standards (L and D), students should expect to be successful (at least) on the following corresponding precalculus standards (P). A list of the corresponding precalculus outcomes can be found at <https://github.com/allmanjm/pre-calc-1/blob/main/README.md>.
+To be fully successful on the calculus outcomes (acronyms beginning with L and D), students should expect to be successful (at least) on the following corresponding precalculus outcomes (acronyms beginning with P). A list of the corresponding precalculus outcomes (P) can be found at <https://github.com/allmanjm/pre-calc-1/blob/main/README.md>.
 
  - LNIF, LIF1, LIF2 < PER*, PFa*, PCa1, PPQ*
  - DARC < PBL1
  - DDfn < PBL1, PFa*, PEx*, PER*, PCa1
  - DIAR < PTL1
- - DLin < PBL1, PSy1
+ - DLin < PBL1, PER*
  - DLAE < PBL1, PER*
- - DCrP < PPQ*, PFa*, PCa1, PER1
- - DSC1 < PPQ*
- - DSC2 < PPQ*
- - DGrS < PPQ*, PSy*
-
+ - DCrP < PPQ*, PFa*, PCa1
+ - DSC1, DSC2, DGrS < PPQ*, PFa*, PBL2, PBL3, PCa1

@@ -2,67 +2,77 @@ class Generator(BaseGenerator):
     def data(self):
         x = var('x')
         
-        # stuff for Task 1
         S1 = sample(range(-5,6),4);
-        a = choice([S1[0],S1[1]]);
+        a = S1[0];
         r1 = S1[1];
         r2 = S1[2];
-        q1 = expand((x-r1)*(x-r2));
-        A1 = randrange(1,6);
-        p1 = A1*(x-S1[3]);
-        top_bottom1 = sample([p1,q1],2);
-        numer1(x) = top_bottom1[0];
-        denom1(x) = top_bottom1[1];
-        f1(x) = numer1(x)/denom1(x);
+        r3 = S1[3];
 
-        if denom1(a) == 0:
-            answer1 = "\\text{The limit does not exist.}"
-        else:
-            answer1 = f1(a)
+        r4 = randrange(6,10)*choice([-1,1]);
+        r5 = randrange(6,10)*choice([-1,1]);
 
+        # ans = "plug in"
+        A_plug = randrange(1,5);
+        exp_plug = randrange(1,5)
+        p_plug(x) = expand(A_plug*(x-r1)*(x-r4));
+        q_plug(x) = (x-r5)^exp_plug*expand((x-r2)*(x-r3));
+        f_plug(x) = p_plug/q_plug;
+        ans_plug = f_plug(a);
 
-        # stuff for Task 2
-        powers2 = [randrange(1,5) for i in range(2)];
-        q2 = (x-r1)^(powers2[0])*(x-r2)^(powers2[1]);
-        A23 = randrange(1,6);
-        p23 = A23*(x-S1[3]);
         
-        top_bottom2 = sample([p23,q2],2);
-        numer2(x) = top_bottom2[0];
-        denom2(x) = top_bottom2[1];
-        f2(x) = numer2(x)/denom2(x);
+        # ans = "zero"
+        A_zero = randrange(1,5);
+        exp_zero = randrange(1,5);
+        p_zero(x) = expand((x-a)*(x-r5));
+        q_zero(x) = (x-r3)^(exp_zero)*expand((x-r1)*(x-r2));
+
+        f_zero(x) = p_zero/q_zero;
+        ans_zero = 0;
 
 
-        if denom2(a) == 0 and powers2[0]%2 == 0:
-            if f2(a+0.1) > 0:
-                answer2 = "+\\infty"
+        # twoside
+        exp_twoside = randrange(1,9);
+        exp_twoside1 = randrange(1,3);
+        exp_twoside2 = randrange(1,3);
+        exp_twoside3 = randrange(1,3);
+        exp_twoside4 = randrange(1,4);
+        exp_twoside5 = randrange(1,4);
+        p_twoside(x) = (x-r1)^exp_twoside1*(x-r2)^exp_twoside2*(x-r3)^exp_twoside3;
+        q_twoside(x) = (x-a)^exp_twoside*(x-r4)^exp_twoside4*(x-r5)^exp_twoside5;
+        f_twoside(x) = p_twoside/q_twoside;
+
+        if exp_twoside%2 == 0:
+            if f_twoside(a+0.1)>0:
+                ans_twoside = "+\\infty"
             else:
-                answer2 = "-\\infty"
-        elif denom2(a) == 0 and powers2[0]%2 == 1:
-            answer2 = "\\text{The limit does not exist.}"
+                ans_twoside = "-\\infty"
         else:
-            answer2 = f2(a)
-            
+            ans_twoside = "\\text{The limit does not exist.}"
 
 
 
 
-        # stuff for Task 3
-        q3 = q1;
-        top_bottom3 = sample([p23,q3],2)
-        numer3(x) = top_bottom3[0];
-        denom3(x) = top_bottom3[1];
-        f3(x) = numer3(x)/denom3(x);
+        # oneside
+        exp_oneside = randrange(1,9);
+        exp_oneside1 = randrange(1,3);
+        exp_oneside2 = randrange(1,3);
+        exp_oneside3 = randrange(1,3);
+        exp_oneside4 = randrange(1,4);
+        exp_oneside5 = randrange(1,4);
+        p_oneside(x) = (x-r1)^exp_oneside1*(x-r2)^exp_oneside2*(x-r3)^exp_oneside3;
+        q_oneside(x) = (x-a)^exp_oneside*(x-r4)^exp_oneside4*(x-r5)^exp_oneside5;
+        f_oneside(x) = p_oneside(x)/q_oneside(x);
+        f4(x) = f_oneside(x);
 
         pm = choice(["+","-"]);
         pm_dict = {"+": 1, "-": -1};
 
-        if denom3(a) == 0 and f3(a+pm_dict[pm]*0.5) > 0:
-            answer3 = "+\\infty"
-        elif denom3(a) == 0 and f3(a+pm_dict[pm]*0.5) < 0:
-            answer3 = "-\\infty"
+        if f4(a+pm_dict[pm]*0.5) > 0:
+            answer4 = "+\\infty"
         else:
-            answer3 = f3(a)
+            answer4 = "-\\infty"
+
+        f_tuple = sample([(f_plug(x),ans_plug),(f_zero(x),ans_zero),(f_twoside(x),ans_twoside)],3);
 
 
 
@@ -70,11 +80,13 @@ class Generator(BaseGenerator):
 
         return {
             "a": a,
-            "f1(x)": f1(x),
-            "answer1": answer1,
-            "f2(x)": f2(x),
-            "answer2": answer2,
+            "f1": f_tuple[0][0],
+            "answer1": f_tuple[0][1],
+            "f2": f_tuple[1][0],
+            "answer2": f_tuple[1][1],
+            "f3": f_tuple[2][0],
+            "answer3": f_tuple[2][1],
             "pm": pm,
-            "f3(x)": f3(x),
-            "answer3": answer3,
+            "f4": f4(x),
+            "answer4": answer4,
         }

@@ -7,7 +7,7 @@
         <content>
             <p>
 <m mode = "display">
-\lim_{x \to {{a}} } {{ f1(x) }}
+\lim_{x \to {{a}} } {{ f1 }}
 </m>
             </p>
         </content>
@@ -21,7 +21,7 @@
         <content>
             <p>
 <m mode = "display">
-\lim_{ x \to {{a}} } {{ f2(x) }}
+\lim_{ x \to {{a}} } {{ f2 }}
 </m>
             </p>
         </content>
@@ -35,13 +35,27 @@
         <content>
             <p>
 <m mode = "display">
-\lim_{ x \to {{a}}^{ {{pm}} } } {{ f3(x) }}
+\lim_{ x \to {{a}} } {{ f3 }}
 </m>
             </p>
         </content>
         <outtro>
             <p>
 <m>{{answer3}}</m>
+            </p>       
+        </outtro>
+    </knowl>
+    <knowl>
+        <content>
+            <p>
+<m mode = "display">
+\lim_{ x \to {{a}}^{ {{pm}} } } {{ f4 }}
+</m>
+            </p>
+        </content>
+        <outtro>
+            <p>
+<m>{{answer4}}</m>
             </p>       
         </outtro>
     </knowl>
