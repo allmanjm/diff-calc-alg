@@ -1,29 +1,21 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <content>
-        <p>
-Let <m>y = \displaystyle {{f}}</m>.
-        </p>
+        <p>Let <m>y = \displaystyle {{f}}</m>.</p>
+        <p>Identify which differentiation rule 
+        (PRODUCT, QUOTIENT, CHAIN, or SUM rule) 
+        you should apply <em>first</em> to 
+        compute <m>y'</m>.</p>
         <list>
-            <item><p>Identify which differentiation rule you should 
-            apply <em>first</em> to compute <m>y'</m>: 
-            PRODUCT, QUOTIENT, CHAIN, or SUM rule.</p></item>
-            <item><p>If
-            <list>
-            <item><p>PRODUCT rule: determine the FACTORS</p></item>
-            <item><p>QUOTIENT rule: determine the NUMERATOR and DENOMINATOR (aka "high" and "low")</p></item> 
-            <item><p>CHAIN rule: determine the INSIDE and OUTSIDE</p></item> 
-            <item><p>SUM rule: determine the TERMS</p></item>
-            </list>
-            </p>
-            </item>
-            <item><p>Compute the derivative <m>y'</m>.</p></item>
+            <item><p>If PRODUCT rule: determine the FACTORS</p></item>
+            <item><p>If QUOTIENT rule: determine the NUMERATOR and DENOMINATOR (aka "high" and "low")</p></item> 
+            <item><p>If CHAIN rule: determine the INSIDE and OUTSIDE</p></item> 
+            <item><p>If SUM rule: determine the TERMS</p></item>
         </list>
+        <p>Then compute the derivative <m>y'</m>.</p>
     </content>
     <outtro>
-        <list>
-            <item><p>{{rs}}</p></item>
-            <item><p><m mode = "display"> y' = {{deriv}}. </m></p></item>
-        </list>
+        <p>{{rs}}</p>
+        <p><m mode = "display"> y' = {{deriv}}. </m></p>
     </outtro>
 </knowl>
