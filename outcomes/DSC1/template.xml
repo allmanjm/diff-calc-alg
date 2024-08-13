@@ -2,8 +2,9 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-For each of function <m>f(x)</m> below, make a sign chart 
-for its first derivative. Use your sign chart to explain and  
+For each function <m>f(x)</m> and <m>g(x)</m> described below, 
+make a sign chart for its first derivative. 
+Use your sign chart to explain and
         </p>
         <list>
             <item><p>identify all <m>x</m> which are critical points;</p></item>
@@ -14,7 +15,8 @@ for its first derivative. Use your sign chart to explain and
     <knowl>
         <content>
             <p>Suppose that <m>f(x)</m> is the function whose derivative
-            is depicted in the graph below.</p>
+            is depicted in the graph below (warning: this is NOT the graph
+            of <m>f(x)</m>).</p>
             <p><image
                 source="assets/DSC1/generated/{{__seed__}}/dgraph.png"
                 description="the derivative of f(x)"
@@ -29,38 +31,33 @@ The corresponding sign chart for the derivative is
                 source="assets/DSC1/generated/{{__seed__}}/Show1.png"
                 description="the sign chart for f'(x)"
             /></p>
-            <p> Recall that the critical points are exactly the 
-            tickmarks for the first derivative sign chart. Further, recall
+            <p> Don't forget to use the sign chart to classify the 
+            critical points as max / min / neither. Recall
             that a critical point is a max/min only if the first 
             derivative changes sign.
-            </p>
-            <p>Warning: unless <m>x=0</m> is a critical point, 
-            you may ignore any unlabeled tickmark at <m>x=0</m> 
-            in the automatically generated sign chart. 
             </p>
         </outtro>
     </knowl>
     <knowl>
         <content>
-            <p><m mode="display"> f(x) = {{f}} </m></p>
+            <p><m mode="display"> g(x) = {{f}} </m></p>
         </content>
         <outtro>
             <p>
-The derivative is <m mode = "display">f'(x) = {{f_prime}} </m> 
+The derivative is <m mode = "display">g'(x) = {{f_prime}} </m> 
 and the corresponding sign chart for the derivative is 
             </p>
             <p><image
                 source="assets/DSC1/generated/{{__seed__}}/Show2.png"
-                description="the sign chart for f'(x)"
+                description="the sign chart for g'(x)"
             /></p>
-            <p>
-Warning:  <m>x=0</m> <em>is</em> a critical point, 
-and there is an unlabeled tickmark at <m>x=0</m> 
-in the automatically generated sign chart.
-
-Recall that a critical point is a max/min only 
-if the first derivative changes sign.
-            </p>
+            <p>Warning:  <m>x=0</m> <em>is</em> a critical point, 
+            and there is an unlabeled tickmark at <m>x=0</m> 
+            in the automatically generated sign chart.</p>
+            <p>Don't forget to use the sign chart to classify the 
+            critical points as max / min / neither. 
+            Recall that a critical point is a max/min only 
+            if the first derivative changes sign.</p>
         </outtro>
     </knowl>
 </knowl>
