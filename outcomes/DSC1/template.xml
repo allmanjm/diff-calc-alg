@@ -2,41 +2,44 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-For each of the functions below, make a sign chart 
-for its first derivative and use it to
+For each of function <m>f(x)</m> below, make a sign chart 
+for its first derivative. Use your sign chart to explain and  
         </p>
         <list>
-            <item><p>find the intervals where the function
-            is increasing / decreasing 
-            (give your answer in interval notation);</p></item>
-            <item><p>classify the critical points as 
-            maxima, minima, or neither</p></item>
+            <item><p>identify all <m>x</m> which are critical points;</p></item>
+            <item><p>classify each critical point as a local (aka relative)
+            maximum or minimum (or neither).</p></item>
         </list>
     </intro>
     <knowl>
         <content>
-            <p><m mode="display"> p(x) = {{cub}} </m></p>
+            <p>Suppose that <m>f(x)</m> is the function whose derivative
+            is depicted in the graph below.</p>
+            <p><image
+                source="assets/DSC1/generated/{{__seed__}}/dgraph.png"
+                description="the derivative of f(x)"
+            />
+            </p>
         </content>
         <outtro>
             <p>
-The derivative is <m mode = "display">p'(x) = {{p_prime}} </m> 
-and the corresponding sign chart for the derivative is
+The corresponding sign chart for the derivative is
             </p>
             <p><image
                 source="assets/DSC1/generated/{{__seed__}}/Show1.png"
-                description="the sign chart for p'(x)"
+                description="the sign chart for f'(x)"
             /></p>
-            <p>
-Warning: unless <m>x=0</m> is a critical point, 
-you may ignore the unlabeled tickmark at <m>x=0</m> 
-in the automatically generated sign chart. 
-
-Recall that a critical point is a max/min only 
-if the first derivative changes sign.
+            <p> Recall that the critical points are exactly the 
+            tickmarks for the first derivative sign chart. Further, recall
+            that a critical point is a max/min only if the first 
+            derivative changes sign.
+            </p>
+            <p>Warning: unless <m>x=0</m> is a critical point, 
+            you may ignore any unlabeled tickmark at <m>x=0</m> 
+            in the automatically generated sign chart. 
             </p>
         </outtro>
     </knowl>
-    
     <knowl>
         <content>
             <p><m mode="display"> f(x) = {{f}} </m></p>
@@ -60,5 +63,4 @@ if the first derivative changes sign.
             </p>
         </outtro>
     </knowl>
-
 </knowl>

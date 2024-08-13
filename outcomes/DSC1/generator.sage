@@ -2,29 +2,28 @@ class Generator(BaseGenerator):
     def data(self):
         x = var('x')
 
-        # for cubic function
-        cps = [randrange(-9,10) for i in range(2)]
-        cp0 = min(cps)
-        cp1 = max(cps)
-
-        dp = cp1-cp0
+        # for picture problem
+        x1 = randrange(1,5);
+        x2 = randrange(1,5);
+        x3 = randrange(5,10);
+        x4 = randrange(5,10);
+        x5 = randrange(5,10);
         
-        if dp == 0:
-            ptest_pts = [cp0-1.5,cp0+1.5]
-            peps = 6/120
-            m1 = cp0 - 3
-            M1 = cp0 + 3
-        else:
-            ptest_pts = [cp0-dp/2,(cp0+cp1)/2,cp1+dp/2]
-            peps = 3*dp/120
-            m1 = cp0-dp
-            M1 = cp1+dp
-        
-        B = randrange(1,9)*choice([-1,1])
-        k = randrange(-33,50)
+        CPs = set([x1,x2,x3,x4,x5]);
+        cps = sorted(list(CPs));
 
-        cub = (B/3)*x^3 -(B/2)*(cp0+cp1)*x^2+B*cp0*cp1*x+k
-        p_prime(x) = derivative(cub,x)
+        cp0 = min(cps);
+        cp1 = max(cps);
+
+        test_samp_list = [0]+cps+[10];
+        ww = len(test_samp_list);
+        
+        ptest_pts = [(test_samp_list[j+1]+test_samp_list[j])/2 for j in range(ww-1)];
+        peps = 10/120
+        m1 = 0
+        M1 = 10
+        
+        p_prime(x) = (x-x1)*(x-x2)*(x-x3)*(x-x4)*(x-x5);
 
         ticks1 = cps
 
@@ -75,7 +74,6 @@ class Generator(BaseGenerator):
 
 
         return {
-            "cub": cub,
             "p_prime": p_prime(x),
             "tm1": ticks1,
             "peps": peps,
@@ -83,6 +81,8 @@ class Generator(BaseGenerator):
             "np1": neg_pts1,
             "m1":m1,
             "M1":M1,
+            "cp0": cp0,
+            "cp1": cp1,
 
             "f": f(x),
             "f_prime": f_prime(x),
@@ -98,6 +98,7 @@ class Generator(BaseGenerator):
     def graphics(data):
 
         return {
+            "dgraph": plot(data["p_prime"],(data["cp0"]-0.5,data["cp1"]+.5)),
             "Show1": plot(0, (data["m1"],data["M1"]), ticks = [data["tm1"],[]], ymin = -1.2*data["peps"], ymax = 1.2*data["peps"], aspect_ratio = 1) + point(data["pp1"], size = 35, marker = "$+$")+point(data["np1"], size = 35, marker = "$-$")+point((data["m1"],0), size = 50, marker = "<")+point((data["M1"],0), size = 50, marker = ">"),
             "Show2": plot(0, (data["m2"],data["M2"]), ticks = [data["tm2"],[]], ymin = -1.2*data["feps"], ymax = 1.2*data["feps"], aspect_ratio = 1) + point(data["pp2"], size = 35, marker = "$+$")+point(data["np2"], size = 35, marker = "$-$")+point((data["m2"],0), size = 50, marker = "<")+point((data["M2"],0), size = 50, marker = ">"),
         }
