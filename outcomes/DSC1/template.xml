@@ -2,21 +2,22 @@
 <knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
     <intro>
         <p>
-For each function <m>f(x)</m> and <m>g(x)</m> described below, 
-make a sign chart for its first derivative. 
+For each function <m>f(x)</m> described below, 
+make a sign chart for its first derivative <m>f'(x)</m>. 
 Use your sign chart to explain and
         </p>
         <list>
-            <item><p>identify all <m>x</m> which are critical points;</p></item>
+            <item><p>identify all <m>x</m> which are critical points 
+            for <m>f(x)</m>;</p></item>
             <item><p>classify each critical point as a local (aka relative)
-            maximum or minimum (or neither).</p></item>
+            maximum or minimum (or neither) for <m>f(x)</m>.</p></item>
         </list>
     </intro>
     <knowl>
         <content>
-            <p>Suppose that <m>f(x)</m> is the function whose derivative
-            is depicted in the graph below (warning: this is NOT the graph
-            of <m>f(x)</m>).</p>
+            <p>The graph below depicts the DERIVATIVE of some unknown
+            function <m>f(x)</m>. Warning: i.e., this is NOT the graph
+            of <m>f(x)</m>, but the graph of <m>f'(x)</m>.</p>
             <p><image
                 source="assets/DSC1/generated/{{__seed__}}/dgraph.png"
                 description="the derivative of f(x)"
@@ -40,11 +41,11 @@ The corresponding sign chart for the derivative is
     </knowl>
     <knowl>
         <content>
-            <p><m mode="display"> g(x) = {{f}} </m></p>
+            <p><m mode="display"> f(x) = {{f}} </m></p>
         </content>
         <outtro>
             <p>
-The derivative is <m mode = "display">g'(x) = {{f_prime}} </m> 
+The derivative is <m mode = "display">f'(x) = {{f_prime}} </m> 
 and the corresponding sign chart for the derivative is 
             </p>
             <p><image
