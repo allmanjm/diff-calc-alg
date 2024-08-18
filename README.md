@@ -9,7 +9,7 @@ The exercises were developed originally for the first semester of a year-long "C
 
 ## Learning Outcomes for Differential Calculus of Algebraic Functions
 
-### L. Limits (3 standards)
+### L. Limits (3 outcomes)
 
 ###### LNIF. I can evaluate limits for which the initial form is not an *indeterminate form*.
 
@@ -17,7 +17,7 @@ The exercises were developed originally for the first semester of a year-long "C
 
 ###### LIF2. I can evaluate limits for which the initial form is an *indeterminate form*. I can use algebraic methods or comparison of degrees to compute the limit when $x \to \pm\infty$.
 
-### D. Rates of change and derivatives (9 standards)
+### D. Rates of change and derivatives (9 outcomes)
 
 ###### DARC. I can compute the *average rate of change* of a function on a given interval. Additionally, I can depict the average rate of change as the slope of a secant line.
 
@@ -35,18 +35,9 @@ The exercises were developed originally for the first semester of a year-long "C
 
 ###### DSC2. I can make a *sign chart* for the second derivative and use it to (1) find where a function is concave up/down, and (2) locate points of inflection.
 
-###### DGrS. I can sketch accurate graphs of functions $y=f(x)$ by using (1) information from the three sign charts for $f$, $f’$, and $f’’$ together with (2) information about the two limits of $f$ as $x\to\pm\infty$.
+###### DOpt. Optimization. I can solve optimization problems using knowledge of differentiation.
 
 
 ## DiffCalc_Alg/PreCalcSkills1 outcome dependencies:
 
-To be fully successful on the calculus outcomes (acronyms beginning with L and D), students should expect to be successful (at least) on the following corresponding precalculus outcomes (acronyms beginning with P). A list of the corresponding precalculus outcomes (P) can be found at <https://github.com/allmanjm/pre-calc-1/blob/main/README.md>.
-
- - LNIF, LIF1, LIF2 < PER*, PFa*, PCa1, PPQ*
- - DARC < PBL1
- - DDfn < PBL1, PFa*, PEx*, PER*, PCa1
- - DIAR < PTL1
- - DLin < PBL1, PER*
- - DLAE < PBL1, PER*
- - DCrP < PPQ*, PFa*, PCa1
- - DSC1, DSC2, DGrS < PPQ*, PFa*, PBL2, PBL3, PCa1
+To be fully successful on the calculus outcomes (acronyms beginning with L and D), students should expect to be successful (at least) on corresponding precalculus outcomes (acronyms beginning with P). A list of these corresponding precalculus outcomes (P) can be found at <https://github.com/allmanjm/pre-calc-1/blob/main/README.md>.

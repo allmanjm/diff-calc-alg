@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<knowl mode="exercise" xmlns="https://spatext.clontz.org" version="0.2">
+    <!-- {{#fixA}} -->
+
+            <content>
+                <p>
+                Suppose a factory intends to manufacture cardboard crates.
+                The crates will be in the shape of a rectangular prism{{topQ}} 
+                Due to constraints in the infrastructure of the factory, 
+                the height of the crate must equal the length of one of the sides of the base.
+                Further, they must use <m>{{A}}</m> square inches of material for each crate.
+                Given these contraints, what is the maximum volume for such a crate?
+                </p>
+                <p>
+                    **note** This solves the problem: "given a limit on our material, 
+                    how do we maximize our carrying capacity?"
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{Vmax}} \approx {{Vmax_approx}} </m> cubic inches
+                </p>
+            </outtro>
+
+    <!-- {{/fixA}} -->
+
+
+    <!-- {{#fixV}} -->
+
+            <content>
+                <p>
+                    Suppose a factory intends to manufacture sheet metal crates.
+                    The crates will be in the shape of a rectangular prism{{topQ}}
+                    Due to constraints imposed by their client, the length of the base of a 
+                    crate must be <m>{{c}}</m> times the width of the base. Further, the 
+                    volume of a crate must be <m>{{V0}}</m> feet<m>^3</m>.
+                    Given these constraints, what is the minimum surface area of such a crate?
+                </p>
+                <p>
+                    **note** This solves the problem: "given that we must carry (at least)
+                    a certain level of capacity, how do we minimize our material used 
+                    (or equivalently, our cost)?"
+                </p>
+            </content>
+            <outtro>
+                <p>
+                    <m>{{Amin}} \approx {{Amin_approx}} </m> feet<m>^2</m>
+                </p>
+            </outtro>
+
+    <!-- {{/fixV}} -->
+</knowl>
