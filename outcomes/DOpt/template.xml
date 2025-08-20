@@ -9,7 +9,7 @@
                 Due to constraints in the infrastructure of the factory, 
                 the height of the crate must equal the length of one of the sides of the base.
                 Further, they must use <m>{{A}}</m> square inches of material for each crate.
-                Given these contraints, what is the maximum volume for such a crate?
+                Given these constraints, what is the maximum volume for such a crate?
                 </p>
                 <p>
                     **note** This solves the problem: "given a limit on our material, 

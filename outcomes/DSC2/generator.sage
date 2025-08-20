@@ -12,7 +12,7 @@ class Generator(BaseGenerator):
         b = -1*(r1+r2);
         c = r1*r2;
         
-        n = choice([5,13,25]); #want n>=3 and 2n-1 to be perfect square
+        n = choice([5,13]); #want n>=3 and 2n-1 to be perfect square
 
         if n == 5:
             rho1 = -b/2 - (r1-r2)/(6);

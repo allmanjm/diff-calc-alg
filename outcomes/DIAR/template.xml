@@ -12,7 +12,7 @@
             <item><p>If CHAIN rule: determine the INSIDE and OUTSIDE</p></item> 
             <item><p>If SUM rule: determine the TERMS</p></item>
         </list>
-        <p>Then compute the derivative <m>y'</m>.</p>
+        <p>Then compute the derivative <m>y'</m>. At each subsequent step in your computation, indicate which derivative rule you have used.</p>
     </content>
     <outtro>
         <p>{{rs}}</p>
